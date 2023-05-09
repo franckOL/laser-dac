@@ -16,7 +16,7 @@ const NUMBER_OF_BALLS = 4;
       new Ball({
         x: Math.random(),
         y: Math.random(),
-        radius: Math.random() / 5 + 0.05,
+        radius: Math.random() / 5 + 0.05
       })
     );
   }
@@ -38,7 +38,7 @@ const NUMBER_OF_BALLS = 4;
 
     const curTime = Date.now();
     const timeStep = (curTime - lastTime) / 1000;
-    balls.forEach((ball) => {
+    balls.forEach(ball => {
       ball.update(timeStep);
       scene.add(ball.draw());
     });

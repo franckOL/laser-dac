@@ -61,8 +61,8 @@ export class Circle extends Shape {
       new Wait({
         x: this.x + this.radius,
         y: this.y,
-        color: [0, 0, 0],
-        amount: options.blankingPoints
+        color: this.color,
+        amount: options.maxWaitPoints / 2
       }).draw()
     );
   }
